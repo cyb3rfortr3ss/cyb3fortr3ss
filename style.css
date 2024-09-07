@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa; /* Light background for better contrast */
+}
+
+header {
+    z-index: 1000;
+    margin-top: 10px; /* Reduced top margin */
+}
+
+#hero {
+    background: url('assets/images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.25rem;
+}
+
+#about img {
+    max-width: 100%;
+    border: 5px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service-card i {
+    color: #007bff; /* Icon color */
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #222;
+    color: #fff;
+}
+
+.social-links a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff; /* or any color you prefer */
+}
+
+/* Contact Form Styles */
+form .position-relative {
+    margin-bottom: 1.5rem;
+}
+
+form .position-relative i {
+    color: #007bff; /* Icon color */
+}
+
+form .form-control {
+    padding-left: 2.5rem; /* Space for icon */
+}
+
+form .form-control::placeholder {
+    color: #666;
+}
+
+form .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Animated Background */
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/images/animated-background.jpg') no-repeat center center;
+    background-size: cover;
+    animation: moveBackground 30s linear infinite;
+    z-index: -1; /* Behind content */
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links a {
+        margin: 10px 0;
+    }
+}
+/* Contact Form Styles */
+form .position-relative {
+    margin-bottom: 1.5rem;
+}
+
+form .position-relative i {
+    color: #007bff; /* Icon color */
+}
+
+form .form-control {
+    padding-left: 2.5rem; /* Space for icon */
+}
+
+form .form-control::placeholder {
+    color: #666;
+}
+
+form .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Prevent textarea resizing */
+textarea {
+    resize: none; /* Disable resizing */
+}
+
